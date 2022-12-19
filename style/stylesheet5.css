@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+  letter-spacing : 0.2em;
+}
+header {
+  padding: 30px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8e4b4b;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  margin: 0; padding: 0;
+  font-size: 20px;
+}
+a {	
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+
+.main-visual {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 40vh;
+  background: url('main_visual.jpg') top center / cover no-repeat;
+}
+
+h2 {
+  margin: 80px;
+  font-size: 25px;
+  font-weight: normal;
+  color: rgb(134, 140, 235);
+}
+
+label{
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+p {
+  margin: 3%,0;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgb(134, 140, 235);
+}
+
+.name p {
+  font-size: 15px;
+  text-align:  center;
+  color: rgb(134, 140, 235);
+}
+
+.select {
+  text-align:  center;
+  margin: 40px;
+}
+
+.select a {
+  color: rgb(134, 140, 235);
+  font-size: 15px;
+}
+
+.buttom{
+  margin: 0,5px;
+  text-align:  center;
+}
+
+footer {
+  text-align:  center;
+}
