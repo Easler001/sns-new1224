@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../sns-new/style/stylesheet4.css">
+  <link rel="stylesheet" href="../style/stylesheet4.css">
   <title>ユーザ登録が完了しました</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
 </div>
 <div class="select">
 <a href="login_form.php">ログインする</a>
-<a href="..">ホームへ</a>
+<a href="../head/index.html">ホームへ</a>
 </div>
 <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">

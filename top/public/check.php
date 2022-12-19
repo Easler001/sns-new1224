@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../library.php');
+require('../head/library.php');
 //もし直接この画面が呼び出されてしまったら、index.phpへ移動させるようにする！
 if (isset($_SESSION['form'])) {
 		$form = $_SESSION['form'];
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../sns-new/style/stylesheet3.css">
+  <link rel="stylesheet" href="../style/stylesheet3.css">
   <title>ユーザ登録画面</title>
   </head>
 <body>

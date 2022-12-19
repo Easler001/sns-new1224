@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../../sns-new/library.php');
+require('../head/library.php');
 
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
   $id = $_SESSION['id'];
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
   <header>
     <h1>
-       <a href="../sns-new">Clubhouse</a>
+       <a href="../head/index.html">Clubhouse</a>
     </h1>
 
 </header>

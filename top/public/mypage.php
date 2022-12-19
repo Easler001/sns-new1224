@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../library.php');
+require('../head/library.php');
 
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     $id = $_SESSION['id'];
@@ -22,7 +22,7 @@ $db = dbconnect();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../sns-new/style/stylesheet5.css">
+  <link rel="stylesheet" href="../style/stylesheet5.css">
   <title>マイページ</title>
   </head>
 <body>

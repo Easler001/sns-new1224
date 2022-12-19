@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../library.php');
+require('../head/library.php');
 
 //nameを初期化してエラーを防ぐ！
 // check.phpの67行目<div><a href="index.php?action=rewrite">&laquo;&nbsp;書き直す</a>
@@ -98,7 +98,7 @@ if (empty($error)) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../sns-new/style/stylesheet3.css">
+  <link rel="stylesheet" href="../style/stylesheet3.css">
   <title>ユーザ登録画面</title>
   </head>
 <body>
@@ -108,8 +108,8 @@ if (empty($error)) {
     </h1>
 		<nav class="nav">
 			<ul>
-				<li><a href="../../sns-new/info.html">About</a></li>
-				<li><a href="../sns-new/contact.html">Contact</a></li>
+				<li><a href="../head/info.html">About</a></li>
+				<li><a href="../head/contact.html">Contact</a></li>
 				<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>
 			</ul>
 		</nav>
@@ -167,7 +167,7 @@ if (empty($error)) {
 <div class="select">
   </form>
   <a href="login_form.php">ログインする</a>
-  <a href="..">ホーム画面へ</a>
+  <a href="../head/index.html">ホーム画面へ</a>
 </div>
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../library.php');
+require('../head/library.php');
 
 $error = [];
 $email = '';
@@ -48,18 +48,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../../sns-new/style/stylesheet2.css">
+  <link rel="stylesheet" href="../style/stylesheet2.css">
   <title>ログイン画面</title>
 </head>
 <body>
 <header>
     <h1>
-       <a href="../index.html">Clubhouse</a>
+       <a href="../head/index.html">Clubhouse</a>
     </h1>
 		<nav class="nav">
 			<ul>
-				<li><a href="../../sns-new/info.html">About</a></li>
-				<li><a href="../sns-new/contact.html">Contact</a></li>
+				<li><a href="../head/info.html">About</a></li>
+				<li><a href="../head/contact.html">Contact</a></li>
 				<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>
 			</ul>
 		</nav>
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="select">
   </form>
   <a href="signup_form.php">新規登録はこちら</a>
-  <a href="..">ホームへ</a>
+  <a href="../head/index.html">ホームへ</a>
   </div>
     </div>
   <footer id="fh5co-footer" role="contentinfo">

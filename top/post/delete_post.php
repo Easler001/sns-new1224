@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>
-       <a href="../sns-new">Clubhouse</a>
+       <a href="../head/index.html">Clubhouse</a>
     </h1>
 
 </header>
