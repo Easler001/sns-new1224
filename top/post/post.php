@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>
-       <a href="../head/index.html">Clubhouse</a>
+       <a href="#">Clubhouse</a>
     </h1>
 
 </header>

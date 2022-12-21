@@ -11,7 +11,7 @@
 <body>
 <header>
     <h1>
-       <a href="../head/index.html">Clubhouse</a>
+       <a href="#">Clubhouse</a>
     </h1>
 		<nav class="nav">
 			<ul>
@@ -22,7 +22,7 @@
 <div class="main-visual">
 <h2>ログアウトしました</h2>
 <p>またお会いしましょう</p>
-<a href="../head/index.html">ホーム画面へ</a>
+<a href="/index.html">ホーム画面へ</a>
 </div>
 </body>
 </html>

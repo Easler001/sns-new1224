@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="select">
   </form>
   <a href="signup_form.php">新規登録はこちら</a>
-  <a href="../head/index.html">ホームへ</a>
+  <a href="/index.html">ホームへ</a>
   </div>
     </div>
   <footer id="fh5co-footer" role="contentinfo">

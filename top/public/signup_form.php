@@ -167,7 +167,7 @@ if (empty($error)) {
 <div class="select">
   </form>
   <a href="login_form.php">ログインする</a>
-  <a href="../head/index.html">ホーム画面へ</a>
+  <a href="/index.html">ホーム画面へ</a>
 </div>
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
