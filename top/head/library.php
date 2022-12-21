@@ -6,7 +6,7 @@ function h($value) {
 }
 /* DBへの接続 */
 function dbconnect() {
-  $db = new mysqli("us-cdbr-east-06.cleardb.net", "b1766f4eecccd6", "9096fe03", "heroku_decbaef3fe591db");
+  $db = new mysqli('localhost', 'root', 'root', 'sns-new');
   if (!$db) {
 		die($db->error);
 	}
