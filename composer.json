@@ -1,11 +1,11 @@
 {
   "require": {
-    "php": "~7.4.21",
+    "php": "~8.0.8",
     "ext-mbstring": "*"
   },
   "config": {
     "platform": {
-      "php": "7.4.21"
+      "php": "8.0.8"
     }
   }
 }
