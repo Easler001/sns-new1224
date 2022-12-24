@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #4bbf39;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@ li {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   background: url('main_visual.jpg') top center / cover no-repeat;
 }
 
