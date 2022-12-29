@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<ul>
 				<li><a href="../head/info.html">About</a></li>
 				<li><a href="../head/contact.html">Contact</a></li>
-				<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>
+				<!--<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>-->
 			</ul>
 		</nav>
 </header>
