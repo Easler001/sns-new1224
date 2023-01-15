@@ -29,7 +29,7 @@ $db = dbconnect();
 <body>
   <header>
     <h1>
-       <a href="#">Clubhouse</a>
+       <a href="#">InColle house</a>
     </h1>
 
 </header>
@@ -113,7 +113,7 @@ $db = dbconnect();
 </div>
     <div class="select">
         <p>&laquo;<a href="../public/mypage.php">マイページへ</a></p>
-        <p>&laquo;<a href="../post/clubhouse.php">Clubhouseへ</a></p>
+        <p>&laquo;<a href="../post/clubhouse.php">InColle houseへ</a></p>
 
     </div>
 <footer id="fh5co-footer" role="contentinfo">

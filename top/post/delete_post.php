@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>
-       <a href="../head/index.html">Clubhouse</a>
+       <a href="../head/index.html">InColle house</a>
     </h1>
 
 </header>
@@ -21,7 +21,7 @@
 </body>
 <div class="page">
 <p><a href="../public/mypage.php">マイページへ</a></p>
-<a href="../post/clubhouse.php">Clubhouseへ</a>
+<a href="../post/clubhouse.php">InColle houseへ</a>
 </div>
 </html>
 

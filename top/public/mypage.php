@@ -28,7 +28,7 @@ $db = dbconnect();
 <body>
 <header>
     <h1>
-       <a href="#">Clubhouse</a>
+       <a href="#">InColle house</a>
     </h1>
 		<nav class="nav">
 			<ul>
@@ -67,7 +67,7 @@ $db = dbconnect();
 </div>
 <div class="select">
 <a href="../post/index.php">投稿フォームへ</a>
-<a href="../post/clubhouse.php">Clubhouseへ</a>
+<a href="../post/clubhouse.php">InColle houseへ</a>
 </div>
 <div class="buttom">
 <form action="out.php" method="POST">

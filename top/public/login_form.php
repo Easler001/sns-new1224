@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <header>
     <h1>
-       <a href="/index.html">Clubhouse</a>
+       <a href="/index.html">InColle house</a>
     </h1>
 		<nav class="nav">
 			<ul>
