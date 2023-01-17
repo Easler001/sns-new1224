@@ -1,3 +1,22 @@
+<?php
+session_start();
+require('../head/library.php');
+
+if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
+    $id = $_SESSION['id'];
+    $name = $_SESSION['name'];
+} else {
+    header('Location: login.php');
+    exit();
+}
+
+$db = dbconnect();
+
+
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -23,7 +42,7 @@
 <!-- Header End -->
 <div class="main-visual">
   <h2>Success!</h2>
-<p>ようこそ</p>
+<p>ようこそ <?php echo h($name); ?>さん</p>
 </div>
 <div class="select">
 <a href="mypage.php">マイページへ</a>
@@ -32,9 +51,12 @@
 		<div class="container">
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
+				<div class="logo">
 					<a>
-						<small class="block">&copy; Easler. All Rights Reserved.</small>
+						<small class="block">&copy; Easler. All Rights Reserved.</small> 
+						
 					</a>
+					</div>
 				</div>
 			</div>
 		</div>

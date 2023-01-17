@@ -22,7 +22,9 @@
 <div class="main-visual">
 <h2>ログアウトしました</h2>
 <p>またお会いしましょう</p>
+<div class='home'>
 <a href="/index.html">ホーム画面へ</a>
+</div>
 </div>
 </body>
 </html>

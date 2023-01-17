@@ -128,10 +128,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		<div class="container">
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
+                <div class="logo">
 					<a>
 						<small class="block">&copy; Easler. All Rights Reserved.</small> 
 						
 					</a>
+					</div>
 				</div>
 			</div>
 

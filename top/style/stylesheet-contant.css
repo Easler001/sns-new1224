@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
   letter-spacing : 0.2em;
 }
 header {
@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:rgb(235, 173, 134);
+  background-color:#53c8e8;
   display: flex;
   align-items: center;
 }
@@ -68,4 +68,8 @@ h2 {
 
 footer {
   text-align:  center; 
+}
+
+.logo a {
+  color: rgb(115, 151, 228);
 }
