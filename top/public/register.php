@@ -13,8 +13,13 @@
     <h1>
        <a href="#">InColle house</a>
     </h1>
-		<nav class="nav">
+<nav class="nav">
 			<ul>
+				<li><a href="/top/public/signup_form.php">Registration</a></li>
+				<li><a href="/top/public/login_form.php">Login</a></li>
+				<li><a href="/top/head/info.html">About</a></li>
+				<li><a href="/top/head/contact.html">Contact</a></li>
+				<!--<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>-->
 			</ul>
 		</nav>
 </header>
@@ -25,7 +30,6 @@
 </div>
 <div class="select">
 <a href="login_form.php">ログインする</a>
-<a href="../head/index.html">ホームへ</a>
 </div>
 <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">

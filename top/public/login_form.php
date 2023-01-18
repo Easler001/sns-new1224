@@ -56,10 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>
        <a href="/index.html">InColle house</a>
     </h1>
-		<nav class="nav">
+    <nav class="nav">
 			<ul>
-				<li><a href="../head/info.html">About</a></li>
-				<li><a href="../head/contact.html">Contact</a></li>
+				<li><a href="/top/public/signup_form.php">Registration</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="/top/head/info.html">About</a></li>
+				<li><a href="/top/head/contact.html">Contact</a></li>
 				<!--<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>-->
 			</ul>
 		</nav>
