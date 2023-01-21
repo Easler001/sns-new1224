@@ -6,7 +6,7 @@ function h($value) {
 }
 /* DBへの接続 */
 function dbconnect() {
-  $db = $db = $db = new mysqli('localhost', 'root', 'root', 'sns-new');
+  $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
   if (!$db) {
 		die($db->error);
 	}
@@ -37,8 +37,12 @@ function setCategoryName($caregory) {
   }
 }
 
-//$db = new mysqli("us-cdbr-east-06.cleardb.net", 'b3a176db61fc9a', 'fda70dab', "heroku_c9155dfc9d6ef3d");
+//$db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
 // HOST User Pass DBnameの順番!!
+
+
+//旧データ
+//$db = $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b3a176db61fc9a', 'fda70dab', "heroku_c9155dfc9d6ef3d");
 
 //localの時
 //$db = new mysqli('localhost', 'root', 'root', 'sns-new');
