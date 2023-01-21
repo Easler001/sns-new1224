@@ -65,8 +65,7 @@ $form['password2'] = filter_input(INPUT_POST, 'password2', FILTER_SANITIZE_STRIN
 $password=$_POST['password'];
 $password2=$_POST['password2'];
 
-$password=htmlspecialchars($password,ENT_QUOTES,'UTF-8');
-$password2=htmlspecialchars($password2,ENT_QUOTES,'UTF-8');
+
 
 if ($password2 !== $password) {
     $error['password2'] = 'miss';
