@@ -2,6 +2,31 @@
 session_start();
 require('../head/library.php');
 
+//追加
+
+//nameを初期化してエラーを防ぐ！
+// check.phpの67行目<div><a href="index.php?action=rewrite">&laquo;&nbsp;書き直す</a>
+// で、index.php?action=rewriteに遷移した時前に書いていた情報を残したまま遷移させる!
+if (isset($_GET['action']) && $_GET['action'] === 'rewrite' && isset($_SESSION['form'])) {
+  $message = $_SESSION['form'];
+} else {
+  $message = [
+      'message' => '',
+
+  ];
+}
+
+$error = [];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $form['message'] = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+  if ($form['message'] === '') {
+      $error['message'] = 'blank';
+}
+};
+
+//ここまで
+
 if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
   $id = $_SESSION['id'];
   $name = $_SESSION['name'];
@@ -11,6 +36,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 }
 $db = dbconnect();
 //メッセージの投稿
+
+
+//追加 エラー0個になったときに投稿できるようにする→投稿内容白紙化の防止！
+if (empty($error)) {
+  $_SESSION['form'] = $form;
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
     $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_NUMBER_INT);
@@ -28,6 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: post.php');
     exit();
 }
+//追加ここまで
+};
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -62,7 +97,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <h2>POSTFORM</h2>
   <form action="" method="post">
     <p>何をお話ししますか?(500文字まで)</p>
-    <textarea name="message" cols="50" rows="5" maxlength="500"></textarea>
+<!--     追加    -->
+    <?php if (isset($error['message']) && $error['message'] === 'blank'): ?>
+            <p class="error">* 本文を入力してください</p>
+        <?php endif ?>
+<!--     ここまで    -->
+    <textarea name="message" cols="70" rows="5" maxlength="500"></textarea>
   <div class='setting'>
     <p>カテゴリ</p>
   </div>
