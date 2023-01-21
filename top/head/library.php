@@ -7,6 +7,7 @@ function h($value) {
 /* DBへの接続 */
 function dbconnect() {
   $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
+  $driver_options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone='+09:00'"];
   if (!$db) {
 		die($db->error);
 	}
@@ -16,7 +17,7 @@ function dbconnect() {
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
   );
-  $driver_options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone='+09:00'"];
+
 
   return $db;
 }
