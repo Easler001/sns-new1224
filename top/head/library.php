@@ -6,17 +6,11 @@ function h($value) {
 }
 /* DBへの接続 */
 function dbconnect() {
-  $db = parse_url(getenv("mysql://b2b4481a7a8f9d:4c3227dc@us-cdbr-east-06.cleardb.net/heroku_3bf94c806b7c575?reconnect=true"));
-  $db['heroku_3bf94c806b7c575'] = ltrim($db['path'], '/'); //pathのみ取り出す
-  $dsn = "mysql:host={$db["us-cdbr-east-06.cleardb.net"]};dbname={$db["heroku_3bf94c806b7c575"]};charset=utf8";
-  $driver_options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone='+09:00'"];
-  try {
-      $db = new PDO($dsn, $db['b2b4481a7a8f9d'], $db['4c3227dc'], $driver_options);
-      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-  } catch (PDOException $Exception) {
-      die('DB接続エラー: ' . $Exception->getMessage());
-  }
+  $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
+  if (!$db) {
+		die($db->error);
+	}
+
   $options = array(
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -53,13 +47,4 @@ function setCategoryName($caregory) {
 
 //localの時
 //$db = new mysqli('localhost', 'root', 'root', 'sns-new');
-
-//function dbconnect() {
-//  $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
-//  if (!$db) {
-//		die($db->error);
-//	}
-
-
-
 ?>
