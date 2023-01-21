@@ -1,37 +1,25 @@
 <?php
 
-require_once('env.php');
-
-
 //htmlspecialcharsを短くする！(ファンクション化)
 function h($value) {
     return htmlspecialchars($value, ENT_QUOTES);
 }
 /* DBへの接続 */
-function dbConnect() {
-  $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
-  $host   = DB_HOST;
-  $dbname = DB_NAME;
-  $user   = DB_USER;
-  $pass   = DB_PASS;
-  $dsn    = "mysql:host=$host;dbname=$dbname;charset=utf8";
-  $driver_options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone='+09:00'"];
-  $options = array(
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
-  );
-
-  
-  try {
-      $dbh = new PDO($dsn,$user,$pass,[
-          PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-      ]);
-  } catch(PDOException $e){
-      echo '接続失敗' . $e->getMessage();
-      exit();
-  };
-  return $dbh;
+function connect()
+{
+    $db = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $db["heroku_3bf94c806b7c575"] = ltrim($db['path'], '/'); //pathのみ取り出す
+    $dsn = "mysql:host={$db["us-cdbr-east-06.cleardb.net"]};dbname={$db["us-cdbr-east-06.cleardb.net"]};charset=utf8";
+    $driver_options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone='+09:00'"];
+    try {
+        $db = new PDO($dsn, $db['b2b4481a7a8f9d'], $db['4c3227dc'], $driver_options);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    } catch (PDOException $Exception) {
+        die('DB接続エラー: ' . $Exception->getMessage());
+    }
+    return $db;
+}
 function setCategoryName($caregory) {
   if ($caregory === '1') {
     return '日常';
