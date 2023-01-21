@@ -148,6 +148,9 @@ if (empty($error)) {
           <?php if (isset($error['email']) && $error['email'] === 'blank'): ?>
            <p class="error">* メールアドレスを入力してください</p>
           <?php endif ?>
+          <?php if (isset($error['email']) && $error['email'] === 'duplicate'): ?>
+           <p class="error">* こちらのアドレスは登録済です</p>
+          <?php endif ?>
   </p>
   <p>
     <label for="password">パスワード：</label>
