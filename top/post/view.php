@@ -110,7 +110,13 @@ $db = dbconnect();
             };
 
             ?>]</span>
-            <p class="day"><a style="color: rgb(134, 140, 235);"><?php echo h($created); ?></a>
+            <p class="day"><a style="color: rgb(134, 140, 235);">
+            <?php
+            
+             echo h($created); 
+             
+             
+             ?></a>
             <?php if ($_SESSION['id'] === $member_id): ?>
                 [<a href="delete.php?id=<?php echo h($id); ?>" style="color: #F33;">削除する</a>]
             <?php endif; ?>

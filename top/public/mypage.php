@@ -68,7 +68,6 @@ $db = dbconnect();
       <p>Username：<?php echo h($name); ?></p>
       <p>Email：<?php echo h($email); ?></p>
   </div>
-</div>
 <div class="select">
 <a href="../post/index.php">投稿フォームへ</a>
 <a href="../post/clubhouse.php">InColle houseへ</a>
@@ -91,6 +90,7 @@ $db = dbconnect();
 				</div>
 			</div>
 		</div>
+    </div>
 	</footer>
 </body>
 </html>

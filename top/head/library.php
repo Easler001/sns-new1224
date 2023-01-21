@@ -6,7 +6,7 @@ function h($value) {
 }
 /* DBへの接続 */
 function dbconnect() {
-  $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b3a176db61fc9a', 'fda70dab', "heroku_c9155dfc9d6ef3d");
+  $db = $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b3a176db61fc9a', 'fda70dab', "heroku_c9155dfc9d6ef3d");
   if (!$db) {
 		die($db->error);
 	}
@@ -36,4 +36,10 @@ function setCategoryName($caregory) {
     return '健康・美容';
   }
 }
+
+//$db = new mysqli("us-cdbr-east-06.cleardb.net", 'b3a176db61fc9a', 'fda70dab', "heroku_c9155dfc9d6ef3d");
+// HOST User Pass DBnameの順番!!
+
+//localの時
+//$db = new mysqli('localhost', 'root', 'root', 'sns-new');
 ?>

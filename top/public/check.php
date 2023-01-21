@@ -11,12 +11,13 @@ if (isset($_SESSION['form'])) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $db = dbconnect();
-  $stmt = $db->prepare('insert into members (name, email, password, picture) VALUES (?, ?, ?, ?)');
+  $stmt = $db->prepare('insert into members (name, email, password, password2, picture) VALUES (?, ?, ?, ?, ?)');
   if (!$stmt) {
     die($db->error);
   }
   $password = password_hash($form['password'], PASSWORD_DEFAULT);
-  $stmt->bind_param('ssss', $form['name'], $form['email'], $password, $form['image']);
+  $password2 = password_hash($form['password2'], PASSWORD_DEFAULT);
+  $stmt->bind_param('sssss', $form['name'], $form['email'], $password, $password2, $form['image']);
   $success = $stmt->execute();
   if (!$success) {
       die($db->error);

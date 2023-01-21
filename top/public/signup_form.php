@@ -12,6 +12,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'rewrite' && isset($_SESSION['
         'name' => '',
         'email' => '',
         'password' => '',
+        'password2' => '',
     ];
 }
 
@@ -55,8 +56,20 @@ if($form['email'] === '') {
 $form['password'] = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 if($form['password'] === '') {
     $error['password'] = 'blank';
-} else if (strlen($form['password']) < 4) {
+} else if (strlen($form['password']) < 8) {
     $error['password'] = 'length';
+}
+
+$form['password2'] = filter_input(INPUT_POST, 'password2', FILTER_SANITIZE_STRING);
+
+$password=$_POST['password'];
+$password2=$_POST['password2'];
+
+$password=htmlspecialchars($password,ENT_QUOTES,'UTF-8');
+$password2=htmlspecialchars($password2,ENT_QUOTES,'UTF-8');
+
+if ($password2 !== $password) {
+    $error['password2'] = 'miss';
 }
 
 //画像のチェック
@@ -144,22 +157,24 @@ if (empty($error)) {
             <p class="error">* パスワードを入力してください</p>
         <?php endif ?>
         <?php if (isset($error['password']) && $error['password'] === 'length'): ?>
-            <p class="error">* パスワードは4文字以上で入力してください</p>
+            <p class="error">* パスワードは8文字以上で入力してください</p>
         <?php endif ?>
   </p>
-<!--  <p>
-    <label for="password_conf">パスワード確認：</label>
-    <input type="password" name="password_conf">
+  <input type="hidden" name="csrf_token" value="  php echo h(setToken());   ">
+  <p>
+    <label for="password2">パスワード確認：</label>
+    <input type="password" name="password2">
+    <?php if (isset($error['password2']) && $error['password2'] === 'miss'): ?>
+            <p class="error">* パスワードが一致しません</p>
+        <?php endif ?>
   </p>
-  </div>
-  <input type="hidden" name="csrf_token" value="  php echo h(setToken());   "> -->
   <p>
     <label for="image">プロフィール画像(任意)：</label>
     <input type="file" name="image" size="35" value=""/>
         <?php if (isset($error['image']) && $error['image'] === 'type'): ?>
          <p class="error">* 写真などは「.png」または「.jpg」の画像を指定してください</p>
-        <?php endif ?>
         <p class="error">* 恐れ入りますが、画像を改めて指定してください</p>
+        <?php endif ?>
   </p>
   <div class="buttom">
   <p>
