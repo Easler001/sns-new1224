@@ -10,7 +10,6 @@ function dbconnect() {
   if (!$db) {
 		die($db->error);
 	}
-
   $options = array(
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -46,4 +45,19 @@ function setCategoryName($caregory) {
 
 //localの時
 //$db = new mysqli('localhost', 'root', 'root', 'sns-new');
+
+/* DBへの接続 */
+//function dbconnect() {
+//  $db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
+//  if (!$db) {
+//		die($db->error);
+//	}
+
+//  $options = array(
+//    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+//    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+//    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
+//  ); 
+
+
 ?>

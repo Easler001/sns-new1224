@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #53c8e8;
+  background-color: transparent;
   display: flex;
   align-items: center;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 a {	
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .logo a {
   color: rgb(115, 151, 228);
