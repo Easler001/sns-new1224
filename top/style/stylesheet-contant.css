@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:#53c8e8;
+  background-color:transparent;
   display: flex;
   align-items: center;
 }
@@ -48,14 +48,14 @@ h2 {
   margin: auto;
   font-size: 30px;
   font-weight: normal;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 .link a{
   margin: auto;
   font-size: 18px;
   font-weight: normal;
-  color: rgb(44, 56, 235);
+  color: rgb(0, 0, 0);
 }
 
 .select {
@@ -63,7 +63,7 @@ h2 {
 }
 
 .select a {
-  color: rgb(176, 167, 238);
+  color: rgb(0, 0, 0);
 }
 
 footer {
@@ -71,5 +71,5 @@ footer {
 }
 
 .logo a {
-  color: rgb(115, 151, 228);
+  color: rgb(0, 0, 0);
 }

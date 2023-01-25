@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #53c8e8;
+  background-color: transparent;
   display: flex;
   align-items: center;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 a {	
   text-decoration: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 nav {
   margin: 0 0 0 auto;
@@ -48,20 +48,20 @@ li {
 
 .name {
   text-align:  center;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 .contents p {
   font-size: 15px;
   text-align:  center;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 h2 {
   margin: auto;
   font-size: 30px;
   font-weight: normal;
-  color: rgb(26, 154, 214);
+  color: rgb(0, 0, 0);
 }
 
 label{
@@ -74,7 +74,7 @@ p {
   margin: auto,0;
   font-size: 15px;
   font-weight: normal;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 .setting {
@@ -90,7 +90,7 @@ p {
 }
 
 .select a {
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 footer {
@@ -102,5 +102,5 @@ footer {
 }
 
 .logo a {
-  color: rgb(115, 151, 228);
+  color: rgb(0, 0, 0);
 }

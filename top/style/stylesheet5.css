@@ -50,7 +50,7 @@ h2 {
   margin: 80px;
   font-size: 25px;
   font-weight: normal;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 label{
@@ -63,13 +63,13 @@ p {
   margin: 3%,0;
   font-size: 15px;
   font-weight: normal;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 .name p {
   font-size: 15px;
   text-align:  center;
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
 }
 
 .select {
@@ -78,7 +78,7 @@ p {
 }
 
 .select a {
-  color: rgb(134, 140, 235);
+  color: rgb(0, 0, 0);
   font-size: 15px;
 }
 
@@ -92,5 +92,5 @@ footer {
 }
 
 .logo a {
-  color: rgb(115, 151, 228);
+  color: rgb(0, 0, 0);
 }
