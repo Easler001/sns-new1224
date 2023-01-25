@@ -61,3 +61,17 @@ footer {
   -webkit-transform: translateX(-50%);
 }
 
+.rounded-corner {
+  background-color: #69a7ed;
+  width: 90px;
+  height: 45px;
+  color: #000000;
+  font-size: 30px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.rounded-corner a {
+margin: 0 5% 0 0;
+
+}
