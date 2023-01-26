@@ -39,6 +39,7 @@ ul {
 li {
   margin: 0 0 0 15px;
   font-size: 14px;
+  list-style: none;
 }
 .main-visual {
   display: flex;
@@ -75,3 +76,31 @@ footer {
 color: #ffffff;
 text-align: center;
 }
+
+
+
+
+
+img.example1 {
+  width: 60%;
+
+
+  }
+  
+  .box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 10px 0 0;
+  }
+  
+
+
+  .item h3 {
+    margin: 0;
+    
+  }
+  .item p {
+    margin: 0 0 15px 0;
+    
+  }
