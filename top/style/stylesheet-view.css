@@ -104,3 +104,27 @@ footer {
 .logo a {
   color: rgb(0, 0, 0);
 }
+
+.rounded-corner {
+  background-color: #000000;
+  width: 90px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 25px;
+  margin: 5px 5px 0 5px;
+}
+
+.rounded-corner a {
+color: #ffffff;
+text-align: center;
+}
+
+.window {
+	width: 90vw;
+	max-width: 380px;
+	height: 240px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	/* 省略 */
+}

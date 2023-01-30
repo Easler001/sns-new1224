@@ -40,7 +40,7 @@ li {
 
 .main-visual {
   margin: 150px 0 0 0;
-  display: flex;
+  text-align:  center;
   flex-flow: column;
   align-items: center;
   height: 65vh;
