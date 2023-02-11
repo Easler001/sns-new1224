@@ -62,14 +62,15 @@ h2 {
   color: rgba(23, 199, 191, 0.824);
 }
 footer {
-  background-color: #202e98;
+  background-color: #000000;
   height:450px;
   text-align: center;
   width: 100%;
 }
 
-.footer a {
-  color: #d06060;
+.ivent a {
+  color: #ffffff;
+  margin: 150px 0 0 0;
 }
 
 .pick-up {
@@ -79,39 +80,58 @@ footer {
   width: 100%;
 }
 
+.pick-up h2 {
+  color: #ffffff;
+  margin: 5px 0;
+}
 
 .pick-up h3 {
   color: #ffffff;
-
-}
-
-.pick-up h2 {
-  color: #ffffff;
-  
+  margin: 5px 480px 5px 0;
 }
 
 .pick-up p {
   color: #ffffff;
-  
 }
 
 .pc-day p {
   color: gray;
   font-size: 10px;
+  margin: 5px 480px 5px 0;
 }
 
 .another {
   background-color: #ffffff;
-  height:1200px;
+  height:1500px;
   text-align: center;
   width: 100%;
+}
+
+.another h2 {
+  color: #000000;
+}
+
+.another p {
+  color: #000000;
 }
 
 .another img {
   margin: 40px 0;
 }
 
-.another p {
+.another h3 {
+  color: gray;
+  font-size: 15px;
+  margin: 0 480px 0 0;
+}
+
+.pc-day2 p {
+  color: gray;
+  font-size: 10px;
+  margin: 5px 480px 5px 0;
+}
+
+.pc-day3 p {
   color: gray;
   font-size: 10px;
 }
@@ -174,4 +194,29 @@ text-align: center;
   }
   .item p {
     margin: 0 ;
+  }
+
+  .incolle-logo img {
+    margin: 40px 0 0 0;
+  }
+
+  .incolle-logo p {
+    color: #ffffff;
+  }
+
+.info {
+  margin: 20px 0 30px 0;
+}
+
+.info a{
+    color: #ffffff;
+  }
+
+.announce {
+  margin: 20px 0 30px 0;
+}
+
+.announce p{
+  color: #ffffff;
+  font-size: 12px;
   }
