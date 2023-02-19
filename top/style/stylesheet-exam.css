@@ -5,15 +5,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Kosugi', sans-serif;  background-color: #ffffff;
-  background-color: #ffffff;
   letter-spacing : 0.2em;
+  display: flex;
+  flex-direction: column;
 }
 header {
   padding: 30px 4% 10px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
 }
