@@ -43,7 +43,7 @@ li {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 65vh;
+  margin:150px 0 0 0 ;
   background: url('main_visual.jpg') top center / cover no-repeat;
 }
 
@@ -95,7 +95,7 @@ p {
 }
 
 footer {
-  text-align:  center; 
+  background-color: #000000;
 }
 
 .page {
@@ -103,7 +103,7 @@ footer {
 }
 
 .logo a {
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .rounded-corner {
