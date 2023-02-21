@@ -38,8 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </head>
 <body>
   <header>
-    <h1>
-       <a href="/index.html">InColle house</a>
+  <h1>
+       <a href="/index.html"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
     </h1>
     <nav class="nav">
 			<ul>
