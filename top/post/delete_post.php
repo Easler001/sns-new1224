@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>
-       <a href="../head/index.html">InColle house</a>
+       <a href="../head/index.html"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
     </h1>
 		<nav class="nav">
 			<ul>
