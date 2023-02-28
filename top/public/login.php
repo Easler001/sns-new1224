@@ -31,7 +31,7 @@ $db = dbconnect();
 <body>
 <header>
     <h1>
-       <a href="#">InColle house</a>
+       <a href="#"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
     </h1>
 		<nav class="nav">
 		<nav class="nav">
