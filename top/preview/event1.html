@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/top/style/stylesheet-event.css">
+  <title>InColle house</title>
+</head>
+<body>
+	<div class="content">
+  <header>
+    <h1>
+       <a href="/index.html"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
+    </h1>
+		<nav class="nav">
+			<button class="rounded-corner">
+				<a href="/top/public/signup_form.php">新規登録</a>
+				</button>
+	
+			<button class="rounded-corner">
+			<a href="/top/public/login_form.php">ログイン</a>
+		</button>
+
+		
+		<!--<nav class="nav">-->
+			<!--<ul>-->
+				<!--<li><a href="/top/public/signup_form.php">Registration</a></li>-->
+				<!--<li><a href="/top/public/login_form.php">Login</a></li>-->
+				<!--<li><a href="/top/head/info.html">About</a></li>-->
+				<!--<li><a href="/top/head/contact.html">Contact</a></li>-->
+				<!--<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>-->
+			<!--</ul>-->
+		</nav>
+</header>
+<!-- Header End -->
+
+
+	<!--<h2>InColle house for You. and…</h2>-->
+	<div class="title">
+	<h1>Night guiter school @GOTANDA</h1>
+</div>
+	<div class="pic">
+	<img src="/picture/2.JPG" class="example1" width="280" height="240">
+</div>
+
+
+
+<div id="smart-button-container">
+	<div style="text-align: center;">
+		<div id="paypal-button-container"></div>
+	</div>
+</div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=JPY" data-sdk-integration-source="button-factory"></script>
+<script>
+function initPayPalButton() {
+	paypal.Buttons({
+		style: {
+			shape: 'pill',
+			color: 'blue',
+			layout: 'vertical',
+			label: 'paypal',
+			
+		},
+
+		createOrder: function(data, actions) {
+			return actions.order.create({
+				purchase_units: [{"description":"レッスン予約用の購入ページです。\nレッスン実施日はInColle houseにてご確認ください。","amount":{"currency_code":"JPY","value":1}}]
+			});
+		},
+
+		onApprove: function(data, actions) {
+			return actions.order.capture().then(function(orderData) {
+				
+				// Full available details
+				console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+				// Show a success message within this page, e.g.
+				const element = document.getElementById('paypal-button-container');
+				element.innerHTML = '';
+				element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+				// Or go to another URL:  actions.redirect('thank_you.html');
+				
+			});
+		},
+
+		onError: function(err) {
+			console.log(err);
+		}
+	}).render('#paypal-button-container');
+}
+initPayPalButton();
+</script>
+
+	<footer id="fh5co-footer" role="contentinfo">
+<div class="ivent">
+			<a href="/top/event/event.php">EVENT</a><br>
+		</div>
+		<div class="incolle-logo">
+			<img src="/logo/incolle-black.jpg" alt="" width="250" height="55">
+			<p>最新情報はSNSにて更新中!</p>
+			<a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener"><img src="/logo/twitter-w.png" alt="" width="30" height="30"></a>
+		</div>
+			<div class="info">
+				<a href="/top/head/info.html">About</a></li>
+				<a href="/top/head/contact.html">Contact</a></li>
+			</div>
+
+<div class="announce">
+	<p>本サイトは、パートナーとともにEaslerが企画運営・編集しているメディアです。</p>
+</div>
+
+		<div class="container">
+
+					<div class="logo">
+					<a>
+						<small class="block">&copy; Easler. All Rights Reserved.</small> 						
+					</a>
+					</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
