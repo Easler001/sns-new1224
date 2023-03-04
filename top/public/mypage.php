@@ -28,21 +28,21 @@ $db = dbconnect();
 <body>
 <header>
     <h1>
-       <a href="#">InColle house</a>
+       <a href="#"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
     </h1>
-    <nav class="nav">
+    <!--<nav class="nav">
 			<ul>
 				<li><a href="/top/public/signup_form.php">Registration</a></li>
 				<li><a href="/top/public/login_form.php">Login</a></li>
 				<li><a href="/top/head/info.html">About</a></li>
 				<li><a href="/top/head/contact.html">Contact</a></li>
-				<!--<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>-->
+				<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>
 			</ul>
-		</nav>
+		</nav>-->
 </header>
 <!-- Header End -->
 <div class="main-visual">
-<h2>マイページ</h2>
+<h2>ユーザー用マイページ</h2>
 <!--  登録している場合は写真を入れる  -->
 <!--  ただデータの呼び込みを上のPHPでしてないのでここで呼び出す。  -->
 <!--  sqlについてはmembersのテーブルからpictureを呼び込む。　-->
@@ -64,33 +64,54 @@ $db = dbconnect();
   <img src="../member_picture/<?php echo h($picture); ?>" width="250" height="130" alt=""/>
 <?php endif; ?>
 <?php endwhile; ?>
+
+<div class="status">
+<h3>現在の購入状況が表示されます！</h3>
+
+<p>Easlerさんがチケットを購入しました！(¥4,400)</p>
+
+</div>
+
   <div class="name">
       <p>Username：<?php echo h($name); ?></p>
       <p>Email：<?php echo h($email); ?></p>
   </div>
-<div class="select">
+<!--<div class="select">
 <a href="../post/index.php">投稿フォームへ</a>
 <a href="../post/clubhouse.php">InColle houseへ</a>
-</div>
+</div>-->
 <div class="buttom">
 <form action="out.php" method="POST">
 <input type="submit" name="logout" value="ログアウト">
 </form>
 </div>
-<footer id="fh5co-footer" role="contentinfo">
+
+	<footer id="fh5co-footer" role="contentinfo">
+
+		<div class="incolle-logo">
+			<img src="/logo/incolle-black.jpg" alt="" width="250" height="55">
+			<p>最新情報はSNSにて更新中!</p>
+			<a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener"><img src="/logo/twitter-w.png" alt="" width="30" height="30"></a>
+		</div>
+			<div class="info">
+				<a href="/top/head/info.html">About</a></li>
+				<a href="/top/head/contact.html">Contact</a></li>
+			</div>
+
+<div class="announce">
+	<p>本サイトは、パートナーとともにEaslerが企画運営・編集しているメディアです。</p>
+</div>
+
 		<div class="container">
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-        <div class="logo">
+
+					<div class="logo">
 					<a>
-						<small class="block">&copy; Easler. All Rights Reserved.</small> 
-						
+						<small class="block">&copy; Easler. All Rights Reserved.</small> 						
 					</a>
 					</div>
-				</div>
-			</div>
 		</div>
-    </div>
+	</footer>
+	</div>
 	</footer>
 </body>
 </html>

@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </header>
 <!-- Header End -->
 <div class="main-visual">
-<h2>ログインフォーム</h2>
+<h2>ユーザー用ログインフォーム</h2>
     <?php if (isset($err['msg'])) : ?>
         <p><?php echo $err['msg']; ?></p>
     <?php endif; ?>
