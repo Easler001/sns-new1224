@@ -65,17 +65,22 @@ $db = dbconnect();
 <?php endif; ?>
 <?php endwhile; ?>
 
-<div class="status">
-<h3>現在の購入状況が表示されます！</h3>
 
-<p>Easlerさんがチケットを購入しました！(¥4,400)</p>
+
+  <div class="name">
+      <p><?php echo h($name); ?> さま</p>
+      <p>Email：<?php echo h($email); ?></p>
+  </div>
+
+	<div class="status">
+<h3>現在の購入状況が表示されます</h3>
+
+<p>Easlerさんがチケットを購入しました(¥4,400)</p>
+
+<p>購入者　1名　　　　　　　合計金額　¥4,400</p>
 
 </div>
 
-  <div class="name">
-      <p>Username：<?php echo h($name); ?></p>
-      <p>Email：<?php echo h($email); ?></p>
-  </div>
 <!--<div class="select">
 <a href="../post/index.php">投稿フォームへ</a>
 <a href="../post/clubhouse.php">InColle houseへ</a>
