@@ -73,7 +73,7 @@ $db = dbconnect();
   </div>
 
 	<div class="status">
-<h3>現在の購入状況が表示されます</h3>
+<h3>現在の購入状況</h3>
 
 <p>Easlerさんがチケットを購入しました(¥4,400)</p>
 
