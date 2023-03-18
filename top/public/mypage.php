@@ -9,11 +9,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     header('Location: login.php');
     exit();
 }
-
 $db = dbconnect();
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -30,19 +26,15 @@ $db = dbconnect();
     <h1>
        <a href="#"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
     </h1>
-    <!--<nav class="nav">
+		
+    <nav class="nav">
 			<ul>
-				<li><a href="/top/public/signup_form.php">Registration</a></li>
-				<li><a href="/top/public/login_form.php">Login</a></li>
-				<li><a href="/top/head/info.html">About</a></li>
-				<li><a href="/top/head/contact.html">Contact</a></li>
-				<li><a href="https://twitter.com/owner_club0022" target="_blank" rel="noopener">Twitter</a></li>
+			<li><p><?php echo h($name); ?> さま</p></li>
 			</ul>
-		</nav>-->
+		</nav>
 </header>
 <!-- Header End -->
 <div class="main-visual">
-<h2>ユーザー用マイページ</h2>
 <!--  登録している場合は写真を入れる  -->
 <!--  ただデータの呼び込みを上のPHPでしてないのでここで呼び出す。  -->
 <!--  sqlについてはmembersのテーブルからpictureを呼び込む。　-->
@@ -60,27 +52,23 @@ $db = dbconnect();
         while ($stmt->fetch()):
             ?>
 
-<?php if ($picture): ?>
+<!-- <?php if ($picture): ?>
   <img src="../member_picture/<?php echo h($picture); ?>" width="250" height="130" alt=""/>
 <?php endif; ?>
-<?php endwhile; ?>
-
-
+<?php endwhile; ?> -->
 
   <div class="name">
-      <p><?php echo h($name); ?> さま</p>
       <p>Email：<?php echo h($email); ?></p>
   </div>
 
 	<div class="status">
 <h3>現在の購入状況</h3>
-
-<p>Easlerさんがチケットを購入しました(¥4,400)</p>
-
-<p>購入者　1名　　　　　　　合計金額　¥4,400</p>
-
+<p>2/22/23:22 田中徹夜 さんがチケットを1枚購入しました　(¥4,400)</p>
+<p>12/23/13:44 江崎紀子 さんがチケットを2枚購入しました　(¥8,800)</p>
+<p>現在購入者　1名　　　　　　　合計金額　</p>
+<p>　　　　　　　　　　　　　　 ¥13,200</p>
 </div>
-
+</div>
 <!--<div class="select">
 <a href="../post/index.php">投稿フォームへ</a>
 <a href="../post/clubhouse.php">InColle houseへ</a>
@@ -115,8 +103,6 @@ $db = dbconnect();
 					</a>
 					</div>
 		</div>
-	</footer>
-	</div>
 	</footer>
 </body>
 </html>

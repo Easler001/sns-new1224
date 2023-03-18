@@ -28,6 +28,9 @@ a {
 nav {
   margin: 0 0 0 auto;
 }
+nav p{
+  font-size: 25px;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -44,6 +47,7 @@ li {
   align-items: center;
   height: 40vh;
   background: url('main_visual.jpg') top center / cover no-repeat;
+  margin: 150px,0,0,0;
 }
 
 h2 {
@@ -65,7 +69,9 @@ p {
   font-weight: normal;
   color: rgb(0, 0, 0);
 }
-
+.name {
+  margin: 150px,0,0,0;
+}
 .name p {
   font-size: 15px;
   text-align:  center;
