@@ -69,7 +69,12 @@ p {
   font-weight: normal;
   color: rgb(0, 0, 0);
 }
-.name {
+.status {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 40vh;
+  background: url('main_visual.jpg') top center / cover no-repeat;
   margin: 150px,0,0,0;
 }
 .name p {
@@ -95,7 +100,7 @@ p {
 
 footer {
   background-color: #000000;
-  height:450px;
+  height:500px;
   text-align: center;
   width: 100%;
 }
