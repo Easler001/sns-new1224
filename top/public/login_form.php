@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_regenerate_id();
     $_SESSION['id'] = $id;
     $_SESSION['name'] = $name;
-    header('location: login.php');
+    header('location: mypage.php');
     exit();
     } else {
         $error['login'] = 'failed';

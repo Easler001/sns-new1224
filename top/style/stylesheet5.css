@@ -9,14 +9,28 @@ body {
   letter-spacing : 0.2em;
 }
 header {
-  padding: 30px 4% 10px;
-  position: fixed;
+  padding: 30px 4% 40px;
   top: 0;
   width: 100%;
   background-color: transparent;
   display: flex;
   align-items: center;
 }
+
+
+
+input[type="submit"] {
+  color: #ffffff;
+text-align: center;
+background: #000000;
+  width: 90px;
+  height: 45px;
+  font-size: 12px;
+  border-radius: 25px;
+  margin: 5px 5px 0 5px;
+  border: none;
+}
+
 h1 {
   margin: 0; padding: 0;
   font-size: 20px;
@@ -29,7 +43,7 @@ nav {
   margin: 0 0 0 auto;
 }
 nav p{
-  font-size: 25px;
+  font-size: 18px;
 }
 ul {
   list-style: none;

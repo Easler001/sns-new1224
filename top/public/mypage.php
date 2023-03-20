@@ -35,7 +35,7 @@ $db = dbconnect();
   <link rel="stylesheet" href="../style/stylesheet5.css">
   <title>マイページ</title>
   </head>
-
+	<body>
 <header>
     <h1>
        <a href="#"><img src="/logo/incolle-white.jpg" alt="" width="250" height="55"></a>
@@ -43,7 +43,7 @@ $db = dbconnect();
     <nav class="nav">
 			<ul>
 			<li><p><?php echo h($name); ?> さま</p></li>
-			<li><div class="buttom">
+			<li><div class="rounded-corner">
 					<form action="out.php" method="POST">
 					<input type="submit" name="logout" value="ログアウト">
 					</form>
@@ -59,7 +59,6 @@ $db = dbconnect();
 <!--  sqlについてはmembersのテーブルからpictureを呼び込む。　-->
 <!--  この時idはここの6行目で$id = $_SESSION['id'];とされているので、id = $idとして呼び出す! -->
 
-<body>
 <?php if ($picture): ?>
   <img src="../member_picture/<?php echo h($picture); ?>" width="250" height="130" alt=""/>
 <?php endif; ?>
