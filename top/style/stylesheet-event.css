@@ -275,30 +275,30 @@ text-align: center;
 
 
 
-@media (max-width: 600px) {
-  header h1{
-  display:table;
-  text-align: center;
-  }
-  .rounded-corner {
-    background: #000000;
-    width: 60px;
-    height: 30px;
-    color: #000000;
-    font-size: 8px;
-    border-radius: 18px;
-    margin: 5px 5px 0 5px;
-    border: none;
-  }
-  .rounded-corner a {
-  color: #ffffff;
-  text-align: center;
-  }
-  .title {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  }
+  @media (max-width: 390px) {
+    header img{
+      width: 150px;
+      height: 30px;
+    }
+    .rounded-corner {
+      background: #000000;
+      width: 60px;
+      height: 30px;
+      color: #000000;
+      font-size: 8px;
+      border-radius: 18px;
+      margin: 5px 5px 0 5px;
+      border: none;
+    }
+    .rounded-corner a {
+    color: #ffffff;
+    text-align: center;
+    }
+    .title {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   .title h1 {
     font-size: 25px;
   }
@@ -314,6 +314,30 @@ text-align: center;
     justify-content: center;
     align-items: center; 
   }
-
+  .incolle-logo img {
+    margin: 40px 0 0 0;
+  }
+  
+  .incolle-logo p {
+    color: #ffffff;
+  }
+  
+  .info {
+  margin: 20px 0 30px 0;
+  }
+  
+  .info a{
+    color: #ffffff;
+  }
+  
+  .announce {
+  margin: 20px 0 30px 0;
+  }
+  
+  .announce p{
+  color: #ffffff;
+  font-size: 6px;
+  }
+  
   
   }
