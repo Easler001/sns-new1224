@@ -221,10 +221,11 @@ text-align: center;
   font-size: 12px;
   }
 
-  @media (max-width: 600px) {
-    header h1{
-    display:table;
-    text-align: center;
+  @media (max-width: 390px) {
+
+    header img{
+      width: 150px;
+      height: 30px;
     }
     .rounded-corner {
       background: #000000;
@@ -245,21 +246,88 @@ text-align: center;
     justify-content: center;
     align-items: center;
     }
-    .title h1 {
-      font-size: 25px;
-    }
-    .title2 h2 {
-      font-size: 15px;
-    }
-    .info h2 {
-      font-size: 15px;
-    }
-  
-    .paypal {
-      display: flex;
-      justify-content: center;
-      align-items: center; 
-    }
-  
-    
+   .item img{
+    width: 140px;
+    height: 120px;
+   }
+   .pick-up {
+    background-color: #000000;
+    height:350px;
+    text-align: center;
+    width: 100%;
+  }
+   .pick-up img{
+    width: 210px;
+    height: 180px;
+   }
+
+   .pick-up h3{
+    font-size: 10px;
+  }
+  .pick-up h2{
+    font-size: 10px;
+  }
+  .pick-up p{
+   font-size: 8px;
+ }
+ .pc-day p{
+  font-size: 8px; 
+}
+
+   .item h3{
+     font-size: 13px;
+   }
+
+   .item p{
+    font-size: 10px;
+  }
+  .pc-day3 p{
+    font-size: 8px; 
+  }
+  .another {
+    background-color: #ffffff;
+    height:900px;
+    text-align: center;
+    width: 100%;
+  }
+  .another img{
+    width: 210px;
+    height: 180px;
+   }
+   .another h3{
+    color: gray;
+    font-size: 8px;
+    margin: 0 190px 0 0;
+  }
+  .another h2{
+    font-size: 16px;
+  }
+  .another p{
+   font-size: 8px;
+ }
+ .incolle-logo img {
+  margin: 40px 0 0 0;
+}
+
+.incolle-logo p {
+  color: #ffffff;
+}
+
+.info {
+margin: 20px 0 30px 0;
+}
+
+.info a{
+  color: #ffffff;
+}
+
+.announce {
+margin: 20px 0 30px 0;
+}
+
+.announce p{
+color: #ffffff;
+font-size: 6px;
+}
+
     }
