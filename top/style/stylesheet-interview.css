@@ -229,3 +229,20 @@ text-align: center;
     margin: 10px 0 10px 15px;
   }
   
+
+  .intro {
+      background-color: #000000;
+      height:750px;
+      text-align: center;
+      width: 100%;
+  }
+
+  .intro h1{
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.intro h2{
+  color: #ffffff;
+  margin: 5px 0;
+}
