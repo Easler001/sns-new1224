@@ -87,7 +87,7 @@ li {
 .title p {
   font-size: 25px;
 }
-.info p {
+.navi p {
   font-size: 14px;
 }
 
@@ -113,19 +113,6 @@ a.btn_04 {
   text-align: left;
   text-decoration: none;
   transition-duration: 0.3s;
-}
-a.btn_04:before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border: 0;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  margin-top: -6px;
 }
 a.btn_04:hover {
   background: #90bbd3;
@@ -204,9 +191,47 @@ text-align: center;
 
 
   @media (max-width: 390px) {
+    .flex {
+      display: block; /*ブロック*/
+      margin: 150px 0 0 0;
+    }
     header img{
       width: 150px;
       height: 30px;
+    }
+
+    .flex img {
+      width: 390px; /*画像サイズ指定*/
+      height: 390px;
+      margin: 40px 0 0 0;
+      padding: 0;
+    }
+    a.btn_04 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 50px;
+      background: #228bc8;
+      border: 1px solid #228bc8;
+      box-sizing: border-box;
+      padding: 0 25px 0 40px;
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      line-height: 1.3;
+      text-align: left;
+      text-decoration: none;
+      transition-duration: 0.3s;
+    }
+    
+    a.btn_04:hover {
+      background: #90bbd3;
+      color: #fff;
+    }
+    a.btn_04:hover:before {
+      border-top: 2px solid #228bc8;
+      border-right: 2px solid #228bc8;
     }
     .rounded-corner {
       background: #000000;
@@ -237,11 +262,6 @@ text-align: center;
     font-size: 15px;
   }
 
-  .paypal {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
   .incolle-logo img {
     margin: 40px 0 0 0;
   }
@@ -266,6 +286,16 @@ text-align: center;
   color: #ffffff;
   font-size: 6px;
   }
-  
+
+  .main {
+    margin: auto;
+  }
+  .main h2 {
+    color: rgb(113, 113, 113);
+  }
+  .main p {
+    color: rgb(113, 113, 113);
+      font-size: 14px;
+  }
   
   }
