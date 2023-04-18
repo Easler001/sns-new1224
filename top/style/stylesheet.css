@@ -80,6 +80,11 @@ footer {
   width: 100%;
 }
 
+.pick-up img {
+  width:700px;
+  height:420px;
+}
+
 .pick-up h2 {
   color: #ffffff;
   margin: 5px 0;
@@ -87,7 +92,7 @@ footer {
 
 .pick-up h3 {
   color: #ffffff;
-  margin: 5px 480px 5px 0;
+  text-align: center;
 }
 
 .pick-up p {
@@ -246,9 +251,44 @@ text-align: center;
     justify-content: center;
     align-items: center;
     }
+
+    .box {
+    margin: auto;
+    display: block;
+    text-align: center;
+    }
+
+    .box2 {
+      margin: auto;
+      display: block;
+      text-align: center;
+      }
+
+      .box3 {
+        margin: auto;
+        display: block;
+        text-align: center;
+        }
+
+        .item1 img{
+          width: 140px;
+          height: 120px;
+          margin: 150px auto 0 auto;
+          display: block;
+         }
+
+    .item1 h3 {
+      font-size: 4px;
+    }
+    .item1 p {
+      font-size: 2px;
+    }
+
    .item img{
     width: 140px;
     height: 120px;
+    margin: auto;
+    display: block;
    }
    .pick-up {
     background-color: #000000;
@@ -331,3 +371,114 @@ font-size: 6px;
 }
 
     }
+
+    @media (max-width: 500px) {
+
+      header img{
+        width: 150px;
+        height: 30px;
+      }
+      .rounded-corner {
+        background: #000000;
+        width: 60px;
+        height: 30px;
+        color: #000000;
+        font-size: 8px;
+        border-radius: 18px;
+        margin: 5px 5px 0 5px;
+        border: none;
+      }
+      .rounded-corner a {
+      color: #ffffff;
+      text-align: center;
+      }
+      .title {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+     .item img{
+      width: 140px;
+      height: 120px;
+     }
+     .pick-up {
+      background-color: #000000;
+      height:350px;
+      text-align: center;
+      width: 100%;
+    }
+     .pick-up img{
+      width: 210px;
+      height: 180px;
+     }
+  
+     .pick-up h3{
+      font-size: 10px;
+    }
+    .pick-up h2{
+      font-size: 10px;
+    }
+    .pick-up p{
+     font-size: 8px;
+   }
+   .pc-day p{
+    font-size: 8px; 
+  }
+  
+     .item h3{
+       font-size: 13px;
+     }
+  
+     .item p{
+      font-size: 10px;
+    }
+    .pc-day3 p{
+      font-size: 8px; 
+    }
+    .another {
+      background-color: #ffffff;
+      height:900px;
+      text-align: center;
+      width: 100%;
+    }
+    .another img{
+      width: 210px;
+      height: 180px;
+     }
+     .another h3{
+      color: gray;
+      font-size: 8px;
+      margin: 0 190px 0 0;
+    }
+    .another h2{
+      font-size: 16px;
+    }
+    .another p{
+     font-size: 8px;
+   }
+   .incolle-logo img {
+    margin: 40px 0 0 0;
+  }
+  
+  .incolle-logo p {
+    color: #ffffff;
+  }
+  
+  .info {
+  margin: 20px 0 30px 0;
+  }
+  
+  .info a{
+    color: #ffffff;
+  }
+  
+  .announce {
+  margin: 20px 0 30px 0;
+  }
+  
+  .announce p{
+  color: #ffffff;
+  font-size: 6px;
+  }
+  
+      }
