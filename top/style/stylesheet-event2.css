@@ -201,8 +201,8 @@ text-align: center;
     }
 
     .flex img {
-      width: 390px; /*画像サイズ指定*/
-      height: 390px;
+      width: 300px; /*画像サイズ指定*/
+      height: 300px;
       margin: 40px 0 0 0;
       padding: 0;
     }
