@@ -43,7 +43,7 @@ li {
 
 .sub {
   display: flex;
-  margin: 0 0 0 20px;
+  margin: 150px 0 0 20px;
 }
 .sub a {
   font-size: 10px;
@@ -54,7 +54,7 @@ li {
 
 .flex {
   display: flex; /*横並び*/
-  margin: 150px 0 0 0;
+  justify-content: center;
 }
 .flex .image {
   width: 750px; /*画像サイズ指定*/
@@ -193,7 +193,8 @@ text-align: center;
   @media (max-width: 390px) {
     .flex {
       display: block; /*ブロック*/
-      margin: 150px 0 0 0;
+      justify-content: center;
+      margin: 0 auto;
     }
     header img{
       width: 150px;
@@ -203,8 +204,6 @@ text-align: center;
     .flex img {
       width: 300px; /*画像サイズ指定*/
       height: 300px;
-      margin: 40px 0 0 0;
-      padding: 0;
     }
     a.btn_04 {
       display: flex;
