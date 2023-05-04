@@ -222,7 +222,7 @@ text-align: center;
 }
 
  .intro h1 {
-   font-size: 10px;
+   font-size: 8px;
  }
  .intro h2 {
    font-size: 10px;
@@ -334,14 +334,14 @@ font-size: 6px;
 }
 
  .intro h1 {
-   font-size: 2px;
+   font-size: 10px;
  }
  .intro h2 {
-   font-size: 2px;
+   font-size: 10px;
  }
  .intro img {
-  width: 350px; /*画像サイズ指定*/
-  height: 350px;
+  width: 330px; /*画像サイズ指定*/
+  height: 330px;
 }
 
 .pic1 img {
