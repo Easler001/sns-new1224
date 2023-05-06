@@ -56,11 +56,12 @@ li {
   display: flex; /*横並び*/
   justify-content: center;
 }
-.flex .image {
-  width: 750px; /*画像サイズ指定*/
-  height: 500px;
+.image {
+  width: 700px; /*画像サイズ指定*/
+  height: 650px;
   margin: 40px 0 0 0;
   padding: 0;
+  background-image: url(/picture/bt5.jpg);
 }
 .flex .right {
   margin: 0 0 0 20px;
@@ -123,16 +124,14 @@ a.btn_04:hover:before {
   border-right: 2px solid #228bc8;
 }
 
-.main {
-  display: block;
-  justify-content: center;
-  margin: 0 0 100px 300px;
-}
+
 .main h2 {
   color: rgb(113, 113, 113);
+  text-align: center;
 }
 .main p {
   color: rgb(113, 113, 113);
+  text-align:left;
 }
 
 
@@ -204,6 +203,14 @@ text-align: center;
     .flex img {
       width: 300px; /*画像サイズ指定*/
       height: 300px;
+      background:center to/100% auto no-repeat;
+    }
+    .image {
+      width: 100%;
+      height: 300px;
+      background-image: url(/picture/bt5.jpg);
+      background-size: cover;
+      background-position: center;
     }
     a.btn_04 {
       display: flex;
@@ -295,6 +302,125 @@ text-align: center;
   .main p {
     color: rgb(113, 113, 113);
       font-size: 14px;
+      text-align:left;
+  }
+  
+  }
+
+  @media (max-width: 500px) {
+    .flex {
+      display: block; /*ブロック*/
+      justify-content: center;
+      margin: 0 auto;
+    }
+    header img{
+      width: 150px;
+      height: 30px;
+    }
+
+    .flex img {
+      width: 300px; /*画像サイズ指定*/
+      height: 300px;
+      background:center to/100% auto no-repeat;
+    }
+    .image {
+      width: 100%;
+      height: 300px;
+      background-image: url(/picture/bt5.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    a.btn_04 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 50px;
+      background: #228bc8;
+      border: 1px solid #228bc8;
+      box-sizing: border-box;
+      padding: 0 25px 0 40px;
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      line-height: 1.3;
+      text-align: left;
+      text-decoration: none;
+      transition-duration: 0.3s;
+    }
+    
+    a.btn_04:hover {
+      background: #90bbd3;
+      color: #fff;
+    }
+    a.btn_04:hover:before {
+      border-top: 2px solid #228bc8;
+      border-right: 2px solid #228bc8;
+    }
+    .rounded-corner {
+      background: #000000;
+      width: 60px;
+      height: 30px;
+      color: #000000;
+      font-size: 8px;
+      border-radius: 18px;
+      margin: 5px 5px 0 5px;
+      border: none;
+    }
+    .rounded-corner a {
+    color: #ffffff;
+    text-align: center;
+    }
+    .title {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  .title h1 {
+    font-size: 25px;
+  }
+  .title2 h2 {
+    font-size: 15px;
+  }
+  .info h2 {
+    font-size: 15px;
+  }
+
+  .incolle-logo img {
+    margin: 40px 0 0 0;
+  }
+  
+  .incolle-logo p {
+    color: #ffffff;
+  }
+  
+  .info {
+  margin: 20px 0 30px 0;
+  }
+  
+  .info a{
+    color: #ffffff;
+  }
+  
+  .announce {
+  margin: 20px 0 30px 0;
+  }
+  
+  .announce p{
+  color: #ffffff;
+  font-size: 6px;
+  }
+
+  .main {
+    margin: auto;
+  }
+  .main h2 {
+    color: rgb(113, 113, 113);
+  }
+  .main p {
+    color: rgb(113, 113, 113);
+      font-size: 14px;
+      text-align:left;
   }
   
   }
