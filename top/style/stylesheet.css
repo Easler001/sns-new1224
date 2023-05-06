@@ -161,25 +161,33 @@ text-align: center;
  
 .box {
     display: flex;
-  
     flex-wrap: wrap;
     margin: 200px 20px 0 70px;
   }
 
+  .box h3 {
+    font-size: 15px;
+  }
+
   .box2 {
     display: flex;
-
     flex-wrap: wrap;
     margin: 0 20px 0 70px;
+  }
+
+  .box2 h3 {
+    font-size: 15px;
   }
 
   .box3 {
     display: flex;
-
     flex-wrap: wrap;
     margin: 0 20px 0 70px;
   }
 
+  .box3 h3 {
+    font-size: 15px;
+  }
 
 
   .item {
@@ -192,6 +200,78 @@ text-align: center;
     margin: 0 20px 0 0;
     width: 280px;
     height: 240px;
+  }
+
+  .image1 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image2.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image2 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image4.png);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image3 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image6.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image4 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image7.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image5 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image8.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image6 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/image9.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image7 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/sweets.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image8 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/illustration.jpg);
+    background-size: cover;
+      background-position: center;
+  }
+
+  .image9 {
+    width: 250px;
+      height: 250px;
+    background-image: url(/picture/2.JPG);
+    background-size: cover;
+      background-position: center;
   }
 
   .item h3 {
@@ -258,11 +338,17 @@ text-align: center;
       display: block;
       text-align: center;
       }
+      .box h3 {
+        font-size: 15px;
+      }
   
       .box2 {
         margin: auto;
         display: block;
         text-align: center;
+        }
+        .box2 h3 {
+          font-size: 15px;
         }
   
         .box3 {
@@ -270,20 +356,90 @@ text-align: center;
           display: block;
           text-align: center;
           }
-  
-          .item1 img{
-            width: 140px;
-            height: 120px;
-            margin: 150px auto 0 auto;
+          .box3 h3 {
+            font-size: 15px;
+          }
+ 
+          .image1 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image2.jpg);
+            margin: auto;
             display: block;
-           }
-  
-      .item1 h3 {
-        font-size: 4px;
-      }
-      .item1 p {
-        font-size: 2px;
-      }
+            text-align: center;
+          }
+        
+          .image2 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image4.png);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image3 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image6.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image4 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image7.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image5 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image8.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image6 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/image9.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image7 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/sweets.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+        
+          .image8 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/illustration.jpg);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
+         
+          .image9 {
+            width: 200px;
+            height: 200px;
+            background-image: url(/picture/2.JPG);
+            margin: auto;
+            display: block;
+            text-align: center;
+          }
 
     .item img{
       width: 140px;
@@ -399,72 +555,114 @@ font-size: 6px;
   justify-content: center;
   align-items: center;
   }
+  
+   .image1 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  .box {
-    margin: 100px auto 0 auto;
-    display: block;
-    text-align: center;
-    }
+  .image2 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image4.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .box2 {
-      margin: auto;
-      display: block;
-      text-align: center;
-      }
+  .image3 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image6.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-      .box3 {
-        margin: auto;
-        display: block;
-        text-align: center;
-        }
+  .image4 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image7.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .item1 img{
-          width: 140px;
-          height: 120px;
-          margin: 150px auto 0 auto;
-          display: block;
-         }
+  .image5 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image8.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .item1 h3 {
-      font-size: 4px;
-    }
-    .item1 p {
-      font-size: 2px;
-    }
+  .image6 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/image9.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  .item img{
-    width: 140px;
-    height: 120px;
-    margin: auto;
-    display: block;
-   }
+  .image7 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/sweets.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image8 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/illustration.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
  
+  .image9 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/picture/2.JPG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
  .pick-up {
   background-color: #000000;
-  height:350px;
+  height:400px;
   text-align: center;
   width: 100%;
 }
  .pick-up img{
-  width: 210px;
-  height: 180px;
+  width: 300px;
+  height: 220px;
  }
 
  .pick-up h3{
-  font-size: 10px;
+  font-size: 12px;
 }
 .pick-up h2{
-  font-size: 10px;
+  font-size: 15px;
 }
 .pick-up p{
- font-size: 8px;
+ font-size: 7px;
 }
 .pc-day p{
-font-size: 8px; 
+font-size: 6px; 
 }
 
  .item h3{
-   font-size: 13px;
+   font-size: 14px;
  }
 
  .item p{
@@ -475,13 +673,13 @@ font-size: 8px;
 }
 .another {
   background-color: #ffffff;
-  height:900px;
+  height:1000px;
   text-align: center;
   width: 100%;
 }
 .another img{
-  width: 210px;
-  height: 180px;
+  width: 300px;
+  height: 220px;
  }
  .another h3{
   color: gray;
