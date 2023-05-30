@@ -6,7 +6,7 @@ function h($value) {
 }
 /* DBへの接続 */
 function dbconnect() {
-  $db = new mysqli('localhost', 'root', 'root', 'sns-new');
+  $db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
   if (!$db) {
 		die($db->error);
 	}
@@ -35,6 +35,8 @@ function setCategoryName($caregory) {
     return '健康・美容';
   }
 }
+
+require('env.php');
 
 //$db = new mysqli("us-cdbr-east-06.cleardb.net", 'b2b4481a7a8f9d', '4c3227dc', "heroku_3bf94c806b7c575");
 // HOST User Pass DBnameの順番!!
