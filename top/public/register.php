@@ -25,8 +25,8 @@
 </header>
 <!-- Header End -->
 <div class="main-visual">
-  <h2>Success!</h2>
-  <h2>ご登録ありがとうございます！</h2>
+  <h2>情報の登録が完了しました</h2>
+  <h2>ご登録ありがとうございます</h2>
 </div>
 <div class="select">
 <a href="login_form.php">ログインする</a>
