@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- Header End -->
 <div class="main-visual">
 <h2>登録確認</h2>
-<p>記入した内容を確認して、「登録する」ボタンをクリックしてください</p>
+<p>記入した内容にお間違えがなければ、「登録する」ボタンをクリックしてください</p>
     <form action="" method="post">
     <dl>
       <dt>ユーザ名：<?php echo h($form['name']); ?></dt>
